@@ -7,10 +7,10 @@ dependencies {
     }
     annotationProcessor "com.github.bumptech.glide:compiler:${GLIDE_VERSION}"
 
-    //implementation project(':webp_decoder')
-    implementation "com.zlc.glide:webpdecoder:${DECODER_VERSION}.${GLIDE_VERSION}"
+    implementation project(':webp_decoder')
+//    implementation "com.zlc.glide:webpdecoder:${DECODER_VERSION}.${GLIDE_VERSION}"
 
-    //implementation project(':framesequence')
+    implementation project(':framesequence')
 
     implementation "androidx.fragment:fragment:${ANDROIDX_VERSION}"
     implementation "androidx.vectordrawable:vectordrawable-animated:${ANDROIDX_VERSION}"

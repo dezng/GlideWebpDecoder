@@ -116,6 +116,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageHolder>
                 .load(url)
                 .placeholder(R.drawable.image_loading)
                 .error(R.drawable.image_error)
+            .webpDontAnim()
                 .optionalTransform(mBitmapTrans)
                 .optionalTransform(WebpDrawable.class, new WebpDrawableTransformation(mBitmapTrans))
                 //.set(WebpFrameLoader.FRAME_CACHE_STRATEGY, WebpFrameCacheStrategy.AUTO)
